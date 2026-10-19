@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
-<title>Meci amical</title>
+<title>Mult noroc, sper sa rezisti la tot</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <section id="gate">
-  <h1>Vestiarul e inchis</h1>
+  <h1>Verificare bilet</h1>
   <p>Ca sa intri pe teren ai nevoie de parola. Indiciu: numarul 8 de pe tricou.</p>
   <input id="pw" type="text" placeholder="Parola" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false">
   <div id="err"></div>
@@ -59,11 +59,11 @@
 (function () {
   var $ = function (id) { return document.getElementById(id); };
   var MSGS = [
-    "<h2>Buna, Mihaela!</h2><p>Ti-am facut o mica aplicatie ca sa-ti aduci aminte cum e sa vorbesti cu cineva care chiar depune effort. Stiu, stiu... oricum tie nu-ti plac barbatii astia. 😂</p>",
+    "<h2>Buna, Mihaela!</h2><p>Ti-am facut o mica aplicatie ca sa-ti aduci aminte cum e sa vorbesti cu cineva care chiar depune effort. Stiu, stiu... oricum tie nu-ti plac barbatii astia.</p>",
     "<p>In primul rand, sper ca te-ai simtit bine la ziua fostului. Apropo, te-a chemat pana la urma sau am ratat un episod important?</p>",
-    "<p>In al doilea rand, vreau sa-ti multumesc ca te-ai tinut de cuvant si ai revenit. Doar cu o mica intarziere de <b>UN AN</b>. Dar hei, mai bine mai tarziu decat niciodata, nu?</p>",
-    "<p>Si nu in ultimul rand, vreau sa stii ca inca mai am cadoul tau, cel pe care urma sa ti-l dau la al treilea date. Sta bine unde e si, din pacate pentru tine, nu cred ca va mai vedea lumina zilei vreodata. 🎁</p>",
-    "<p>Bun, suficient. Te tachinam si eu putin. Nu puteam sa ratez ocazia, mai ales dupa un comeback de asemenea proportii.</p><p>Dar sa stii ca tot ce am mentionat mai sus ramane valabil. Nu retragem acuzatiile doar pentru ca am facut o aplicatie draguta.</p>",
+    "<p>In al doilea rand, vreau sa-ti multumesc ca te-ai tinut de cuvant si ai revenit. Doar cu o mica intarziere de <b>UN AN</b>.:) </p>",
+    "<p>Stiai ca?! Stiai ca inca mai am cadoul tau, cel pe care urma sa ti-l dau la al treilea date. Ce pacat tho' ca nu-l vei mai primi vreodata...Joder 🎁</p>",
+    "<p>Bun, suficient. Te tachinam si eu putin. Nu puteam sa ratez ocazia, mai ales dupa un comeback de asemenea proportii.</p><p>Dar sa stii ca tot ce am mentionat mai sus ramane valabil. Nu retragem acuzatiile doar pentru ca am facut o aplicatie asta.</p>",
     "<p>Acum, hai pe Instagram sa mai depanam amintiri. Chiar sunt curios ce-ai mai facut in tot anul asta. Si, sincer, sper ca viata ti-a mai oferit cateva lectii interesante intre timp. Poate chiar si putina <b>KARMA</b>. 😌</p><p>Hai, apasa pe Continue. Nu te tin aici un an.</p>"
   ];
   var TOTAL = MSGS.length, goals = 0, tries = 0, busy = false;
